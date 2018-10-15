@@ -30,6 +30,19 @@ li.navPages-item.navPages-item-page a.navPages-action[href="http://manatten.mybi
 .navPages-action { font-size: 14px; }
 .navUser-action { font-size: 14px;}
 .on_account { display:  none; }
+.navUser-item img { width: 15px; vertical-align: text-top; display: inline-block;}
+.img_wrap { position: relative;}
+
+.on_account { display:  none; }
+.navUser-item img { width: 15px; vertical-align: text-top;  display: inline-block;}
+.img_wrap { position: relative;}
+.imgText1 { position: absolute; bottom: 106px; color: #333; background: #fff; padding: 5px 14px; right: 54px; font-size: 11px; font-weight: 600;}
+.imgText2 { position: absolute; bottom: 0;  color: #000; top: -33%;  right: 0; left: -34px; border: 1px solid #000; width: 22%; height: 30px; line-height: 30px; margin: auto; font-size: 11px; text-transform: uppercase;}
+.imgText3 { position: absolute; color: #000; right: 111px; top: 191px; border: 1px solid #000; font-size: 12px; padding: 4px 8px; font-weight: 400;}
+.imgText4 { position: absolute; bottom: 167px; color: #000; right: 56px; background: #fff; font-size: 12px; padding: 5px 9px; font-weight: 600;}
+
+
+
 
 section.heroCarousel.slick-initialized.slick-slider.slick-dotted { float: left; width: 100%;}
 
@@ -47,5 +60,10 @@ article.footer-info-col {  width: 21%;}
 article.footer-info-col[data-section-type="newsletterSubscription"] { width: 35%;}
 .footer-info-list a {  color: #000 !important; text-decoration: none; text-transform: uppercase;}
 article.footer-info-col[data-section-type="newsletterSubscription"] h5.footer-info-heading { text-transform: uppercase; font-weight: 600;}
+
+.social_icon li {  display: inline-block; margin: 0 21px 0 0;}
+.social_icon ul { margin: 0; margin-top: 20px;}
+.social_icon li a { text-decoration: none;}
+article.footer-info-col[data-section-type="newsletterSubscription"] .form-field { margin-bottom: 0;}
 
 p.powered-by {  text-align: center;}
