@@ -1,0 +1,12 @@
+{
+  "normalStoreUrl": "http://manatten.mybigcommerce.com/",
+  "port": "3000",
+  "clientId": "lzyxnyw2e0elvz905bibmolsdc8ncd8",
+  "accessToken": "8dj22uvfgja6116rk10m7hm3euryioh",
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  }
+}
