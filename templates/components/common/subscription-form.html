@@ -12,6 +12,30 @@
                 <input class="form-input" id="nl_email" name="nl_email" type="email" value="{{customer.email}}" placeholder="{{lang 'newsletter.email_placeholder'}}">
                 <input class="button button--primary form-prefixPostfix-button--postfix" type="submit" value="{{lang 'newsletter.subscribe_submit'}}">
             </div>
+            <div class="social_icon">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="/product_images/uploaded_images/instagram.png" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            <img src="/product_images/uploaded_images/facebook.png" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            <img src="/product_images/uploaded_images/twitter.png" />
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="#">
+                            <img src="/product_images/uploaded_images/printrest.png" />
+                        </a>
+                    </li>                        
+                </ul>                
+            </div>
             {{#if settings.show_newsletter_summary }}
                 <div class="footer-newsletter-summary">{{settings.newsletter_summary}}</div>
             {{/if}}

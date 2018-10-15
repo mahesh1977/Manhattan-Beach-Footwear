@@ -24,11 +24,11 @@
             </li>
             <li class="navUser-item navUser-item--divider">|</li>
         {{/if}}
-        <li class="navUser-item">
-            <a class="navUser-action navUser-action--quickSearch" href="#" data-search="quickSearch" aria-controls="quickSearch" aria-expanded="false">{{lang 'common.search'}}</a>
+        <li class="navUser-item">             
+            <a class="navUser-action navUser-action--quickSearch" href="#" data-search="quickSearch" aria-controls="quickSearch" aria-expanded="false"><img src="/product_images/uploaded_images/magnifire.png" class="search_img" /> {{lang 'common.search'}}</a>
         </li>
-        <li class="navUser-item">
-            <a class="navUser-action" href="{{urls.account.index}}">{{lang 'common.account'}}</a>
+        <li class="navUser-item">            
+            <a class="navUser-action" href="{{urls.account.index}}"><img src="/product_images/uploaded_images/account.png" class="account_img" /> {{lang 'common.account'}}</a>
         </li>
         <div class="on_account">
             {{#if settings.gift_certificates_enabled}}
@@ -55,7 +55,7 @@
                 data-dropdown="cart-preview-dropdown"
                 data-options="align:right"
                 href="{{urls.cart}}">
-                <span class="navUser-item-cartLabel">{{lang 'common.cart'}}</span> <span class="countPill{{#if cart.items}} countPill--positive{{/if}} cart-quantity">{{cart.quantity}}</span>
+                <span class="navUser-item-cartLabel"><img src="/product_images/uploaded_images/bag.png" class="cart_img" /> {{lang 'common.cart'}}</span> <span class="countPill{{#if cart.items}} countPill--positive{{/if}} cart-quantity">{{cart.quantity}}</span>
             </a>
 
             <div class="dropdown-menu" id="cart-preview-dropdown" data-dropdown-content aria-hidden="true"></div>
