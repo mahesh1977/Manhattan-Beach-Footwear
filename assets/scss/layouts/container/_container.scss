@@ -62,7 +62,7 @@ article.footer-info-col {  width: 21%;}
 article.footer-info-col[data-section-type="newsletterSubscription"] { width: 35%;}
 .footer-info-list a {  color: #000 !important; text-decoration: none; text-transform: uppercase;}
 article.footer-info-col[data-section-type="newsletterSubscription"] h5.footer-info-heading { text-transform: uppercase; font-weight: 600;}
-
+article.footer-info-col.topNewsletter { display: none;}
 .social_icon li {  display: inline-block; margin: 0 21px 0 0;}
 .social_icon ul { margin: 0; margin-top: 20px;}
 .social_icon li a { text-decoration: none;}
@@ -77,5 +77,67 @@ p.powered-by {  text-align: center;}
 @media only screen and ( max-width: 1260px ) {
     article.footer-info-col[data-section-type="newsletterSubscription"] input.button.button--primary { background: #fff; border: 1px solid #cccccc; border-radius: 0; margin-left: 0; float: left; color: #333; font-weight: 600; max-width: 30%;  width: 100%;
     margin-top: 0; padding: 0;}
-
 }
+@media only screen and ( max-width: 1160px ) {
+    nav.navUser { float: right; width: 30%;}
+    .navPages-container { width: 50%; float: left;}
+}
+@media only screen and ( max-width: 1024px ) {
+    .navPages-container { width: 45%; float: left;}
+    .navPages-action { padding: 10px 10px;}
+    nav.navUser { width: 35%;}
+    .imgText2 { width: 33%;}
+}
+@media only screen and ( max-width: 992px ) {
+    article.footer-info-col[data-section-type=newsletterSubscription] { width: 35%;  display: none;}
+    article.footer-info-col.topNewsletter { display: block; width: 100%; text-align: center;}
+    article.footer-info-col.topNewsletter .form-prefixPostfix.wrap { width: 85%; float: none; margin: 0 auto;}
+    article.footer-info-col[data-section-type="footer-webPages"] { margin-left: 77px;}    
+    article.footer-info-col[data-section-type=newsletterSubscription] input.button.button--primary { max-width: 20%; width: 100%;}
+    article.footer-info-col.topNewsletter { background: #eee; padding: 25px 0; margin-bottom: 40px;}
+    article.footer-info-col { width: 30%;}
+    .right_div1 { margin-top: 0;}
+    .footer { background-color: snow;}        
+    .footer-info {  margin: 0 -21px;}
+    .footer-info-list a { font-size: 16px; }
+    .footer-info-list li { margin-bottom: 5px;}
+    .footer-info-col {margin-bottom: 1rem;}
+    .left_div .img_wrap {  margin-top: 55px;}
+    .imgText2 {  top: 100%;}
+    .imgText3 { right: 40%; top: 100%;}
+}
+@media only screen and ( max-width: 800px ) {
+    article.footer-info-col[data-section-type=footer-webPages] { margin-left: 60px;}
+    .header-logo { width: 100%;}
+    .navPages-container {width: 100%; float: left;}
+     #menu ul.navPages-list li { line-height: 21px !important; height: auto !important;}
+    .navPages-quickSearch { border-bottom: 1px solid #ccc;}
+    ul.navPages-list.navPages-list--user a.navPages-action { display: inline-block;}
+}
+@media only screen and ( max-width: 768px ) {
+    .footer-info-list a { font-size: 14px;}
+    .imgText2 { width: 40%;}
+}
+@media only screen and ( max-width: 600px ) {
+    .footer-info-list a { font-size: 14px;}
+    article.footer-info-col { width: 100%; text-align: center; margin-left: 0 !important;}
+    .footer-info-list a { font-size: 16px;}
+    .footer-copyright>.powered-by { width: 68%; margin: 0 auto;}
+}
+@media only screen and ( max-width: 600px ) {
+    .footer-copyright>.powered-by { width: 90%; margin: 0 auto;}
+    article.footer-info-col[data-section-type=newsletterSubscription] input.button.button--primary {max-width: 25%; width: 100%;}
+    .left_div .img_wrap { margin-top: 0;}
+    .left_div { float: left; width: 100%; margin-top: -30px;}
+    .right_div { float: right;  width: 100%; margin-top: 50px;}
+    .left_div1 { float: left;  width: 100%;}
+    .right_div1 { float: right; width: 100%; margin-top: 70px; margin-bottom: 25px;}
+    .imgText1, .imgText2 { font-size: 19px;}
+    .imgText3, .imgText4 { font-size: 19px;}
+    .imgText3 {  right: 0; top: 100%; left: 0; width: 50%; margin: 0 auto;}
+    .imgText4 { bottom: 167px; right: 0; left: 0; width: 55%; margin: 0 auto;}
+}
+
+
+
+

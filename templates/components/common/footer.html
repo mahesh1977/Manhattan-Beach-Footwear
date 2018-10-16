@@ -17,7 +17,12 @@
             </article>
         {{/if}}
         <section class="footer-info">
-           <div class="resposiveMove">
+                <article class="footer-info-col topNewsletter" data-section-type="newsletterSubscription">
+                    {{#if settings.show_newsletter_box}}
+                        {{> components/common/subscription-form}}
+                    {{/if}}
+                    {{> components/common/payment-icons}}
+                </article>
                 <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
                     <!-- <h5 class="footer-info-heading">{{lang 'footer.navigate'}}</h5> -->
                     <ul class="footer-info-list">
@@ -72,7 +77,7 @@
                     {{/if}}
                 </article>
                 {{/if}}
-           </div>
+
             <article class="footer-info-col" data-section-type="newsletterSubscription">
                 {{#if settings.show_newsletter_box}}
                     {{> components/common/subscription-form}}
@@ -87,7 +92,7 @@
         {{/if}}
         {{#if theme_settings.show_powered_by}}
             <div class="footer-copyright">
-                <p class="powered-by"><a href="https://www.bigcommerce.com?utm_source=merchant&amp;utm_medium=poweredbyBC" rel="nofollow">Powered by BigCommerce &copy; {{moment format="YYYY"}} {{settings.store_name}} </a></p>
+                <p class="powered-by"><a href="https://www.bigcommerce.com?utm_source=merchant&amp;utm_medium=poweredbyBC" rel="nofollow">©2018 Manhattan Beach Footwear Company Design & Development by Diztinct.com</a></p>
             </div>
         {{/if}}
         
