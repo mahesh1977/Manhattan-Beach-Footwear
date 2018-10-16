@@ -27,8 +27,24 @@
         <li class="navUser-item">             
             <a class="navUser-action navUser-action--quickSearch" href="#" data-search="quickSearch" aria-controls="quickSearch" aria-expanded="false"><img src="/product_images/uploaded_images/magnifire.png" class="search_img" /> {{lang 'common.search'}}</a>
         </li>
-        <li class="navUser-item">            
+        <li class="navUser-item myaccount">            
             <a class="navUser-action" href="{{urls.account.index}}"><img src="/product_images/uploaded_images/account.png" class="account_img" /> {{lang 'common.account'}}</a>
+            <ul>
+            <img src="/product_images/uploaded_images/top-arrow.png" class="toparrow" />
+            <li class="navUser-item navUser-item--account">
+                {{#if customer}}
+                    <a class="navUser-action" href="{{urls.account.index}}">{{lang 'common.account'}}</a>
+                    <a class="navUser-action" href="{{urls.auth.logout}}">{{lang 'common.logout'}}</a>
+                {{else}}
+                    <a class="navUser-action" href="{{urls.auth.login}}">{{lang 'common.login'}}</a>
+                    {{#if settings.account_creation_enabled}}
+                        <span class="navUser-or">{{lang 'common.or'}}</span> <a class="navUser-action" href="{{urls.auth.create_account}}">{{lang 'common.sign_up'}}</a>
+                    {{/if}}
+                {{/if}}
+            </li>
+            <li><a href="/account.php?action=order_status">Order Status</a></li>
+            <li><a href="/wishlist.php">Wishlist</a></li>
+            </ul>
         </li>
         <div class="on_account">
             {{#if settings.gift_certificates_enabled}}
