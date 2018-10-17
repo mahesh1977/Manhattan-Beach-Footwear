@@ -5,9 +5,14 @@
     </div>
 </div> 
 {{/if}}-->
-<header class="header" role="banner">
+<header class="header" id="myHeader" role="banner">
+
     <a href="#" class="mobileMenu-toggle" data-mobile-menu-toggle="menu">
-        <span class="mobileMenu-toggleIcon">Toggle menu</span>
+    <span>MENU</span>
+    <img src="/product_images/uploaded_images/menu-close.png" class="menuclose" />
+    <img src="/product_images/uploaded_images/menu-open.png" class="menuopen" />
+        <!--<span class="mobileMenu-toggleIcon">Toggle menu</span>-->
+       
     </a>
     
     {{#if page_type '===' 'default'}}
@@ -29,6 +34,30 @@
 
 </header>
 <style type="text/css">
+.countPill{ display:inline-block;    background: #fff;    color: #000;}
+.quickSearchResults a.modal-close {
+    display: none;
+}
+.TopBanner > a {
+    display: block;
+    background: #fff;
+    max-width: 170px;
+    padding: 4px;
+    position: absolute;
+    bottom: 26%;
+    z-index: 1;
+    color: #000;
+    text-decoration: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.TopBanner {
+    margin-bottom: 2%;
+    float:left;
+    width:100%;
+    position:relative;
+}
 a.mobilelogo{ display:none;}
 button.slick-arrow {
     display: none !important;
@@ -36,14 +65,49 @@ button.slick-arrow {
 ul.slick-dots {
     display: none !important;
 }
-@media (max-width: 930px){.header-logo > a{ display:none;} 
+.navUser-item img{    width: auto;}
+.navUser-item img{vertical-align: middle;}
+div#quickSearch {
+    padding: 0px;
+    padding-right: 10px;
+    background: #f2f2f2;
+}
+input#search_query {
+    background: url(/product_images/uploaded_images/search-icon.png) no-repeat right 9px #f2f2f2;}
+    .mobilebanner{ display:none;}
+    @media only screen and (max-width: 992px){
+.footer-info {
+    margin: 0 0;
+}
+    }
+@media (min-width: 931px){
+    
+    .header-logo{ transition:0.3s;}
+    h1.header-logo.header-logo--center{ transition:0.1s;}
+header#myHeader.sticky  h1.header-logo.header-logo--center {
+    text-align: left;
+    padding: 20px 0px 0px 20px;
+}
+header#myHeader.sticky .header-logo{    width: 6%;}
+header#myHeader.sticky .navPages-container ul.navPages-list{ float:left;}
+    }
+@media (max-width: 930px){
+    .container{ padding:0px;}
+    .navPages-container ul.navPages-list {
+    min-height: 50px;
+    line-height: 50px;
+    width:100%;
+}
+.navPages ol li, .navPages ul li{line-height: 50px;}
+.navUser-section{line-height: 40px;}
+    .header-logo > a{ display:none;} 
 a.mobilelogo {
     display: inline-block!important;
     text-align: left;
     float: left;
-    width: auto;
-    margin-left: 10px;
-    padding:5px 0px
+    width: 48px;
+   padding:0px;
+   margin:10px 10px;
 }
 a.mobileMenu-toggle {
     margin-left: 60px;
@@ -51,9 +115,139 @@ a.mobileMenu-toggle {
 }
 .header-logo{ width:10%;}
 .header > .navPages-container{ width:55%;}
+.body{margin-top: 0;}
+li.navUser-item.myaccount {
+    position: relative;
+}
+li.navUser-item.myaccount > ul {
+    position: absolute;
+    background: #fff;
+    width: 180px;
+    border: 1px solid #e5e5e5;
+    top: 70px;
+    display:none;
+}
+li.navUser-item.myaccount:hover > ul { display:block;}
+li.navUser-item.myaccount > ul li {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: block;
+    height: auto;
+    line-height: 10px;
+    float: left;
+    border-bottom: 1px solid #ccc;
+}
+li.navUser-item.myaccount > ul li a {
+    margin: 0px;
+    padding: 3px 10px!important;
+    line-height: 30px!important;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    font-weight: normal;
+}
+li.navUser-item.myaccount > ul li span{ color:#000;}
+li.navUser-item.myaccount > ul > img {
+    position: absolute;
+    top: -9px;
+    left: 30px;
+}
+ul.navUser-section.navUser-section--alt a.navUser-action {
+    font-size: 0px;
+}
+ul.navUser-section.navUser-section--alt li.navUser-item.navUser-item--cart a.navUser-action {
+    font-size: 0px;
+}
+span.countPill.cart-quantity {
+    display: none;
+}
+.navUser-item-cartLabel {
+    display: block;
+}
+.footer {
+    background-color: #eee;
+    padding: 0rem 0rem 10px;
+    float: left;
+    width: 100%;
+}
  }
- @media (max-width: 800px){.header > .navPages-container{ width:100%;}}
+
+ @media (max-width: 800px){
+     .navPages{ background:#fff; border-top:1px solid #dddddd;}
+     .navPages > .navPages-quickSearch {
+    display: none;
+}
+     ul.navUser-section.navUser-section--alt {
+    margin-top: 15px;
+}
+a.mobileMenu-toggle {
+    margin-left: 60px;
+    margin: 6px 60px;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 60px;
+    width: 6.92857rem;
+}
+img.menuclose {
+    display: none;
+}
+a.mobileMenu-toggle.is-open img.menuclose{ display:block;}
+a.mobileMenu-toggle.is-open img.menuopen{ display:none;}
+
+a.mobileMenu-toggle > img {
+    float: right;
+    margin-top: 23px;
+}
+a.mobileMenu-toggle > img.menuopen {
+    margin-top: 25px;
+}
+     .header > .navPages-container{ width:100%;}
+.navUser-item {
+    display: inline-block;
+    line-height: 0px;
+    float:left;
+}
+nav.navUser {
+    width: 100%;
+}
+.dropdown--quickSearch .form {
+    margin: auto;
+    max-width: 100%;
+}
+input#search_query {
+    font-size: 14px;
+    border: none;
+    padding: 14px;
+    color: #000;
+}
+.dropdown--quickSearch.is-open {
+    left: auto!important;
+    outline: 0;
+    right: 0px!important;
+    width: 100%!important;
+    z-index: 50;
+    max-width: 100%;
+    top: 66px!important;
+    margin: 0 auto;
+    }
+    .navPages-container.is-open{    padding-top: 66px;}
+    div#quickSearch .quickSearchResults {
+    max-height: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+ }
+  @media (max-width: 480px){
+      .desktopbanner{ display:none;}
+      .mobilebanner{ display:block; width:100%;}
+      }
 @media (min-width: 801px){
+    .body {
+    margin-top: 0;
+    float: left;
+    width: 100%;
+}
     .heroCarousel-slide .heroCarousel-image-wrapper {
     max-height: 72.85714rem;
 }
@@ -61,14 +255,14 @@ a.mobileMenu-toggle {
     .dropdown--quickSearch.is-open {
     left: auto!important;
     outline: 0;
-    right: 250px!important;
+    right: 262px!important;
     width: 100%!important;
     z-index: 50;
     max-width: 290px;
     top: 23px!important;
 }
 input#search_query {
-    background: #f2f2f2;
+   
     font-size: 14px;
     border: none;
     padding: 14px;
@@ -124,5 +318,58 @@ li.navUser-item.myaccount > ul > img {
     left: 30px;
 }
 }
-
+ @media (min-width: 801px) and (max-width: 930px){
+    
+    .dropdown--quickSearch.is-open {
+    left: auto!important;
+    outline: 0;
+    right: 20px!important;
+    width: 100%!important;
+    z-index: 50;
+    max-width: 100%;
+    top: 63px!important;
+}
+    
+    }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    margin: 0 auto;
+    float: none;
+    left: 0;
+}
+header#myHeader.sticky .header-logo > a{ display:none;}
+header#myHeader.sticky .header-logo > a.mobilelogo{ display:block;}
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+$(document).ready(function(){
+    $('.navUser-action--quickSearch').click(function(){
+        setTimeout(function(){
+            var openlen = $('.dropdown--quickSearch.is-open').length;
+        if(openlen == 1){
+            $('.navUser-action--quickSearch').html('<img src="/product_images/uploaded_images/close-icon.png" class="search_img"> Close');
+            }else{
+                $('.navUser-action--quickSearch').html('<img src="/product_images/uploaded_images/magnifire.png" class="search_img"> Search');
+                }
+            },100);
+    });
+    
+    
+
+    });
+</script>

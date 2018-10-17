@@ -20,18 +20,18 @@
 @font-face {
     font-family: 'Conv_PROXIMANOVAREGULAR';
     src: url('/product_images/uploaded_images/Fonts/PROXIMANOVAREGULAR.eot');
-    src: local('?'), url('/product_images/uploaded_images/Fonts/PROXIMANOVAREGULAR.woff') format('woff'), url('/product_images/uploaded_images/Fonts/PROXIMANOVAREGULAR.ttf') format('truetype'), url('/product_images/uploaded_images/Fonts/PROXIMANOVAREGULAR.svg') format('svg');
+    src: local('☺'), url('/product_images/uploaded_images/Fonts/PROXIMANOVAREGULAR.woff') format('woff'), url('/product_images/uploaded_images/Fonts/PROXIMANOVAREGULAR.ttf') format('truetype'), url('/product_images/uploaded_images/Fonts/PROXIMANOVAREGULAR.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-.heroCarousel.slick-initialized {
+.heroCarousel.slick-initialized { 
     max-height: 52.42857rem;}
 .mob-img{display:none;}
 .banners, section.heroCarousel.slick-initialized.slick-slider.slick-dotted {
     display: block;
     clear: both;
     width: 100%;
-    max-width: 1116px;
+    max-width: 1680px;
     margin: 0 auto;
     float: none!important;
 }
@@ -39,16 +39,16 @@ body, html {  height: auto; float: left; width: 100%;}
 body.hasAdminBar .header { padding-top: 0;}
 .header { float: none;
     width: 100%;
-    max-width: 1116px;
+    max-width: 1680px;
     margin: 0 auto;}
 .header-logo { margin: 0;   padding: 0; float: left; width: 20%;}
-.navPages-container { width: 43%; float: left;}
+.navPages-container { width: 40%; float: left;}
 nav.navUser { float: right; width: 37%; padding: 0;}
 .navUser-section { position: relative; min-height: 100%; line-height: 60px;}
 #menu li.navPages-item.navPages-item-page { display: none;}
 li.navPages-item.navPages-item-page a.navPages-action[href="http://manatten.mybigcommerce.com/blog/"] { display: none;}
-.navPages-container ul.navPages-list { min-height: 100px; line-height: 70px;}
-.navPages-action { font-size: 14px; }
+.navPages-container ul.navPages-list { min-height: 100px; line-height: 70px; float:left;}
+.navPages-action { font-size: 14px; font-weight:500 !important;}
 .navUser-action { font-size: 14px;}
 .on_account { display:  none; }
 .navUser-item img { width: 15px; vertical-align: sub;  display: inline-block; margin-right: 5px;}
@@ -69,7 +69,7 @@ div#quickSearch .container {
     margin: 0;
 }
 
-.banners { float: left;  width: 100%; background: none;}
+.banners { float: left;  width: 100%; background: none; padding:0px;}
 .left_div { float: right; width: 46%;}
 .right_div { float: left;  width: 47.7%;}
 .bottomProduct {float: left;  width: 100%;}
@@ -78,7 +78,7 @@ div#quickSearch .container {
 
 
 
-.footer { background-color: #eeeeee;  padding: 3rem 0 10px;  float: left;  width: 100%;}
+.footer { background-color: #eeeeee;  padding: 3rem 3rem 10px;  float: left;  width: 100%;}
 article.footer-info-col {  width: 21%;}
 article.footer-info-col[data-section-type="newsletterSubscription"] { width: 35%;}
 .footer-info-list a {  color: #000 !important; text-decoration: none; text-transform: uppercase;}
@@ -95,7 +95,18 @@ article.footer-info-col[data-section-type="newsletterSubscription"] input#nl_ema
 p.powered-by {  text-align: center;}
 
 
-
+@media only screen and ( min-width: 1261px ) {
+    .container {
+    padding: 0;max-width: 1680px;
+}
+.banner, .facetedSearch-toggle, .previewCartAction, .previewCartItem {
+    max-width: 1680px;
+}
+section.heroCarousel.slick-initialized.slick-slider.slick-dotted {
+    max-height: 72.85714rem;
+}
+.header-logo-image{ right:auto;}
+    }
 @media only screen and ( max-width: 1260px ) {
     article.footer-info-col[data-section-type="newsletterSubscription"] input.button.button--primary { background: #fff; border: 1px solid #cccccc; border-radius: 0; margin-left: 0; float: left; color: #333; font-weight: 600; max-width: 30%;  width: 100%;
     margin-top: 0; padding: 0;}
@@ -156,7 +167,7 @@ p.powered-by {  text-align: center;}
     .footer-copyright>.powered-by { width: 90%; margin: 0 auto;}
     article.footer-info-col[data-section-type=newsletterSubscription] input.button.button--primary {max-width: 25%; width: 100%;}
     .left_div .img_wrap { margin-top: 0;}
-    .left_div { float: left; width: 100%; margin-top: -30px;}
+    .left_div { float: left; width: 100%; margin-top: 0;}
     .right_div { float: right;  width: 100%; margin-top: 50px;}
     .left_div1 { float: left;  width: 100%;}
     .right_div1 { float: right; width: 100%; margin-top: 70px; margin-bottom: 25px;}
