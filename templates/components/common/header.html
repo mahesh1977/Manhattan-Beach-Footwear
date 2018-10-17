@@ -34,6 +34,8 @@
 
 </header>
 <style type="text/css">
+.powered-by a br{ display:none;}
+.searchtop-arrow{ display:none;}
 .countPill{ display:inline-block;    background: #fff;    color: #000;}
 .quickSearchResults a.modal-close {
     display: none;
@@ -91,6 +93,34 @@ header#myHeader.sticky  h1.header-logo.header-logo--center {
 header#myHeader.sticky .header-logo{    width: 6%;}
 header#myHeader.sticky .navPages-container ul.navPages-list{ float:left;}
     }
+    @media (max-width: 1024px) and (min-width: 931px){
+        .header-logo > a{ display:none;} 
+a.mobilelogo {
+    display: inline-block!important;
+    text-align: left;
+    float: left;
+    width: 48px;
+   padding:0px;
+   margin:20px 10px;
+}
+a.mobileMenu-toggle {
+    margin-left: 60px;
+   
+}
+.header-logo{ width:6%;}
+.header > .navPages-container{ width:55%;}
+.dropdown--quickSearch.is-open{max-width: 260px !important;}
+.navPages-container ul.navPages-list {
+    min-height: 50px;
+    line-height: 50px;
+    float: left;
+}
+.navPages ol li, .navPages ul li {
+    margin: 0;
+    padding: 0;
+    line-height: 68px;
+}
+        }
 @media (max-width: 930px){
     .container{ padding:0px;}
     .navPages-container ul.navPages-list {
@@ -153,7 +183,7 @@ li.navUser-item.myaccount > ul > img {
     top: -9px;
     left: 30px;
 }
-ul.navUser-section.navUser-section--alt a.navUser-action {
+ul.navUser-section.navUser-section--alt > li > a.navUser-action {
     font-size: 0px;
 }
 ul.navUser-section.navUser-section--alt li.navUser-item.navUser-item--cart a.navUser-action {
@@ -166,14 +196,45 @@ span.countPill.cart-quantity {
     display: block;
 }
 .footer {
-    background-color: #eee;
+    background-color: #fff;
     padding: 0rem 0rem 10px;
     float: left;
     width: 100%;
 }
+li.navUser-item.myaccount:hover > ul {
+    display: block;
+    right: 0;
+    top:60px;
+}
+li.navUser-item.myaccount > ul > img {
+    position: absolute;
+    top: -10px!important;
+    left: auto!important;
+    right: 10px;
+}
  }
 
  @media (max-width: 800px){
+     p.quickSearchMessage {
+    font-size: 16px;
+    padding: 0 0 20px 0;
+}
+     .searchtop-arrow{ display:block;}
+     img.searchtop-arrow {
+    float: right;
+    position: absolute;
+    right: 103px;
+    top: -9px;
+}
+    
+     img.togglearrow {
+    position: absolute;
+    top: 57px;
+    z-index: 10000000;
+    overflow: visible;
+    left: 125px;
+    display:block;
+}
      .navPages{ background:#fff; border-top:1px solid #dddddd;}
      .navPages > .navPages-quickSearch {
     display: none;
@@ -237,12 +298,38 @@ input#search_query {
     overflow: hidden;
     overflow-y: scroll;
 }
+#menu ul.navPages-list li{    border-bottom: 1px solid #dddddd;background: url(/product_images/uploaded_images/rightarrow.png) no-repeat right;}
+.navPages-container ul.navPages-list{ border:none; margin:0px; padding:0px;}
+.footer-info {
+    margin: 0 0;
+    background: #fff;
+}
+.footer-copyright>.powered-by {
+     margin: 10px auto 0px;
+}
  }
   @media (max-width: 480px){
       .desktopbanner{ display:none;}
       .mobilebanner{ display:block; width:100%;}
+      ul.navUser-section.navUser-section--alt{ position:static;}
+      li.navUser-item.myaccount {
+    position: static;
+}
+li.navUser-item.myaccount:hover > ul {
+    display: block;
+    right: 0;
+    top: 73px;
+    width: 100%;
+}
+li.navUser-item.myaccount > ul > img {
+    position: absolute;
+    top: -10px!important;
+    left: auto!important;
+    right: 53px;
+}
       }
 @media (min-width: 801px){
+     img.togglearrow { display:none;}
     .body {
     margin-top: 0;
     float: left;
@@ -368,6 +455,13 @@ $(document).ready(function(){
                 }
             },100);
     });
+    
+     $(document).on("click", function(e) {
+         var openlen = $('.dropdown--quickSearch.is-open').length;
+         if(openlen == 0){
+                $('.navUser-action--quickSearch').html('<img src="/product_images/uploaded_images/magnifire.png" class="search_img"> Search');
+             }
+     });
     
     
 

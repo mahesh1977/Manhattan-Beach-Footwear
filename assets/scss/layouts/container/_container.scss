@@ -140,6 +140,9 @@ section.heroCarousel.slick-initialized.slick-slider.slick-dotted {
     .imgText3 { right: 40%; top: 100%;}
 }
 @media only screen and ( max-width: 800px ) {
+    ul.navPages-list.navPages-list--user {
+    display: none;
+}
     article.footer-info-col[data-section-type=footer-webPages] { margin-left: 60px;}
     .header-logo { width: 100%;}
     .navPages-container {width: 100%; float: left;}
@@ -152,6 +155,10 @@ section.heroCarousel.slick-initialized.slick-slider.slick-dotted {
     .imgText2 { width: 40%;}
 }
 @media only screen and ( max-width: 600px ) {
+    .powered-by a br{ display:block !important;}
+    article.footer-info-col.footer-info-col--small[data-section-type="footer-categories"] {
+    display: none;
+}
 .img_wrap a.mob-img{display:block;}
 .img_wrap a img{display:none;}
 .img_wrap a.mob-img img {
